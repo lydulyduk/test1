@@ -1,0 +1,12 @@
+<?php
+$appeals = $this->getAppealsCollection();
+$appealViewUrl = Mage::getUrl('appeals/index/view');
+?>
+    <h1>Appeals</h1>
+<?php foreach ($appeals as $item): ?>
+    <h2>
+        <a href="<?php echo $appealViewUrl; ?>?id=<?php echo $item->getId(); ?>">
+            <?php echo $item->getText(); ?>
+        </a>
+    </h2>
+<?php endforeach; ?>

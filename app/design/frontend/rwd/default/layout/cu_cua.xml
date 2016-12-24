@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<layout>
+    <cucua_cua_index>
+        <reference name="content">
+            <block type="cucua/cua" template="cu_cua/index.phtml" />
+        </reference>
+    </cucua_cua_index>
+    <cucua_cua_view>
+        <reference name="content">
+            <block type="cucua/view" name="appeal.content" template="cu_cua/view.phtml" />
+        </reference>
+    </cucua_cua_view>
+</layout>
